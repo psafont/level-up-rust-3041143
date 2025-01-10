@@ -1,5 +1,7 @@
-fn info(a: &T) {
-    todo!();
+fn info<T>(a: &T)
+where T:std::fmt::Display
+{
+    println!("{}", a);
 }
 
 fn main() {
@@ -8,16 +10,6 @@ fn main() {
     info(&a);
     info(&b);
 
-    // Advanced 1
-    // use std::ffi::CString;
-    
-    // let c = CString::new("?").unwrap();
-    // info(&input);
-
-    // Advanced 2
-    // use std::path::Path;
-    // let d = Path::new("/tmp/linkedin-learning");
-    // info(d);
 }
 
 
