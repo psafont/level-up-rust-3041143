@@ -2,14 +2,14 @@ mod run_length_encoding {
     pub fn encode(text: &str) -> String {
         todo!()
     }
-    
+
     pub fn decode(text: &str) -> String {
         todo!()
     }
 }
 
 fn main() {
-    // 
+    //
 }
 
 #[test]
